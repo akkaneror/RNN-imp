@@ -112,7 +112,6 @@ for j in range(100000):
     update_0 *= 0
 
     if (j % 1000 == 0):
-
         print("Lost:" + str(lost))
         print("Predict:" + str(d))
 
