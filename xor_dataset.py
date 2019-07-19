@@ -33,6 +33,7 @@ class XORDataset(data.Dataset):
 
 
 def get_random_bits_parity(num_sequences, num_bits):
+
   """Generate random bit sequences and their parity. (Our features and labels).
     Returns:
       bit_sequences: A numpy array of bit sequences with shape [num_sequences, num_bits].
