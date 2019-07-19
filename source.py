@@ -7,11 +7,13 @@ def sigmoid(x):
 def sigmoid_derivative(x):
     return x * (1 - x)
 
-def relu(x):
+def relu(output):
+    x = copy.deepcopy(output)
     x[x < 0] = 0
     return x
 
-def relu_derivative(x):
+def relu_derivative(output):
+    x = copy.deepcopy(output)
     x[x <= 0] = 0
     x[x > 0] = 1
     return x
